@@ -21,9 +21,9 @@
 
 .bloco1 {
   width: 100%;
-  height: 100vh;
+  height: 100vw;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: 5px 7%;
   background-image: url("https://i.imgur.com/Q3m3kOc.png");
@@ -33,21 +33,87 @@
 
 .home-text {
   max-width: 50rem;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 29%;
+  padding-bottom: 1%;
 }
 
 .texto {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--branco);
   margin-bottom: 1rem;
 }
 
 .text-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 2%;
   color: var(--branco);
+}
+
+.botao {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 13px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.botao:active,
+.botao:hover {
+  outline: 0;
+}
+
+.botao span {
+  background-color: #05062d;
+  padding: 11px 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.botao:hover span {
+  background: none;
+}
+
+.botao:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.botao-barra {
+  display: none;
 }
 
 /* Fim Primeira Parte */
@@ -90,64 +156,6 @@
   }
 
   .botao {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-    border: 0;
-    border-radius: 8px;
-    -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 13px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-
-  .botao:active,
-  .botao:hover {
-    outline: 0;
-  }
-
-  .botao span {
-    background-color: #05062d;
-    padding: 11px 16px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: 300ms;
-    transition: 300ms;
-  }
-
-  .botao:hover span {
-    background: none;
-  }
-
-  .botao:active {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
   }
 }

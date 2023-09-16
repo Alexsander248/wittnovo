@@ -28,15 +28,12 @@
 
 .header {
   display: flex;
-  height: 10vh;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(4, 0, 15, 0.5);
   padding: 11px 40px;
-
-  position: inherit;
   background-color: rgba(4, 0, 15, 0.5);
+  position: absolute;
 }
 
 .nav-menu {
@@ -54,7 +51,7 @@
 }
 
 .navegacao-mobile {
-  background-color: #0400ff2a;
+  background-color: rgba(4, 0, 255, 0.165);
   backdrop-filter: blur(10px);
   position: absolute;
   display: grid;
@@ -93,10 +90,6 @@
 
 .navegacao-mobile.abrir {
   visibility: visible;
-}
-
-.botao {
-  display: none;
 }
 
 .navegacao {
