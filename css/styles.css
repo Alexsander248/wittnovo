@@ -1,8 +1,9 @@
 @import url(barra.css);
 @import url(rodape.css);
+
 /* Rodapé */
 
-.rodape {
+/* .rodape {
   position: relative;
   background: #3586ff;
   min-height: 100px;
@@ -119,6 +120,6 @@
   100% {
     background-positon-x: 0px;
   }
-}
+} */
 
 /* Fim Rodapé */
