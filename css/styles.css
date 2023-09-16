@@ -139,6 +139,43 @@
 
 /* Fim Primeira Parte */
 
+/* Fim Segunda Parte */
+
+.Assistidos {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sinopse2 {
+  margin-top: 25px;
+}
+
+.Mais-Assistidos {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.Mais-Assistidos img {
+  border-radius: 20px;
+  box-shadow: 0px 3px 21px 15px rgba(0, 7, 71, 0.56);
+  width: 20rem;
+}
+
+.Mais-Assistidos1 {
+  justify-content: space-around;
+}
+
+/* Fim Segunda Parte */
+
 /* Responsivo Tablet */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .bloco1 {
@@ -194,7 +231,13 @@
 
   .bloco1 {
     background-size: contain;
-    height: 100vw;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .Mais-Assistidos1 {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
