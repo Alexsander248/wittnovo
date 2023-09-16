@@ -183,10 +183,6 @@
   width: 20rem;
 }
 
-.Mais-Assistidos1 {
-  justify-content: space-around;
-}
-
 /* Fim Segunda Parte */
 
 /* Responsivo Tablet */
@@ -250,8 +246,9 @@
 
   .Mais-Assistidos1 {
     display: flex;
-    justify-content: space-around;
     justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 5rem;
   }
 
