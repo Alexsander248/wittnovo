@@ -35,6 +35,7 @@
   max-width: 50rem;
   padding-top: 29%;
   padding-bottom: 1%;
+  backdrop-filter: blur(2px);
 }
 
 .texto {
