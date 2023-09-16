@@ -20,10 +20,10 @@
 /* Primeira Parte */
 
 .bloco1 {
-  width: 100%;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: start;
+  align-items: end;
   justify-content: space-between;
   padding: 5px 7%;
   background-image: url("https://i.imgur.com/Q3m3kOc.png");
@@ -32,16 +32,15 @@
 }
 
 .home-text {
+  /* padding-top: 29%; */
   max-width: 50rem;
-  padding-top: 29%;
-  padding-bottom: 1%;
-  backdrop-filter: blur(2px);
 }
 
 .texto {
   font-size: 1rem;
   color: var(--branco);
   margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
 }
 
 .text-h1 {
@@ -117,19 +116,23 @@
   display: none;
 }
 
+.botao-iniciar .text {
+  color: var(--branco);
+}
+
 /* Fim Primeira Parte */
 
 /* Responsivo Tablet */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .bloco1 {
-    background-size: contain;
+    background-size: cover;
   }
 }
 
 /* Responsivo Desktop */
 @media screen and (min-width: 1024px) {
   .bloco1 {
-    background-size: contain;
+    background-size: cover;
   }
   .navegacao-mobile {
     display: none;
@@ -163,6 +166,16 @@
   }
   .botao {
     display: flex;
+  }
+
+  .texto {
+    font-size: 1.8rem;
+  }
+
+  .text-h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2%;
   }
 }
 
