@@ -1,16 +1,11 @@
 /*  Inicio Barra topo   */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --cor-do-botao-mobile: #05062d;
   --cor-da-barrinha-do-botao-mobile: #ffffff;
   --cor-do-nome-da-logo: #1e1e1e;
   --cor-fundo-botao-brinde: #a2d6f9;
+  --azul: #3140c5;
 }
 
 .header {
@@ -19,8 +14,17 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
-  font-family: "Inter", sans-serif;
+  background-color: rgba(4, 0, 15, 0.5);
+  padding: 11px 40px;
+  transition: all 0.5s;
+  position: inherit;
+  background-color: rgba(4, 0, 15, 0.5);
+}
+
+.header .logo .texto-logo {
+  color: var(--azul);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .navegacao {
@@ -43,6 +47,14 @@
   flex-direction: column;
 }
 
+.navegacao .nav-menu a {
+  color: #fff;
+}
+
+.navegacao a:hover {
+  color: rgb(0, 2, 128);
+}
+
 .navegacao-mobile {
   background-color: #0400ff2a;
   backdrop-filter: blur(10px);
@@ -63,7 +75,6 @@
   width: 100%;
   justify-content: right;
   list-style: none;
-  text-decoration: none;
 }
 
 .navegacao-mobile .nav-menu a {
@@ -98,7 +109,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  /* padding: 0.2rem 0.5rem; */
   border-radius: 4px;
 }
 
@@ -121,24 +131,6 @@
   height: 4vh;
 }
 
-.botao-start {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--cor-do-botao-mobile);
-  width: 10vh;
-  height: 5vh;
-  border-radius: 7px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--cor-da-barrinha-do-botao-mobile);
-  padding: 0 3.5rem;
-}
-
-.texto-logo {
-  color: var(--cor-do-nome-da-logo);
-}
-
 .btn-menu-mobile.ativo .barrinha:nth-child(1) {
   transform: translateY(5px) rotate(50deg);
 }
@@ -157,58 +149,67 @@
 
 /* Responsivo Desktop */
 @media screen and (min-width: 1024px) {
-  .navegacao-mobile {
-    display: none;
-  }
-  .nav-menu {
+  button {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-  }
-  .header {
-    justify-content: start;
-  }
-  .search {
-    display: block;
-  }
-
-  .btn-menu-mobile {
-    display: none;
-  }
-
-  .botao-start {
-    display: flex;
-    justify-self: end;
+    font-family: Phantomsans, sans-serif;
+    font-size: 13px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    white-space: nowrap;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 
-  .navegacao {
-    padding: 0 5rem;
-    display: flex;
+  button:active,
+  button:hover {
+    outline: 0;
+  }
+
+  button span {
+    background-color: #05062d;
+    padding: 11px 16px;
+    border-radius: 6px;
     width: 100%;
+    height: 100%;
+    -webkit-transition: 300ms;
+    transition: 300ms;
   }
 
-  .nav-menu {
-    display: flex;
-    gap: 2rem;
+  button:hover span {
+    background: none;
   }
-  .item a {
-    color: var(--cor-do-nome-da-logo);
 
-    font-size: 1.2rem;
+  button:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
-  .traduz {
-    display: none;
-  }
-}
-
-/*  Fim Barra topo   */
-
-/* Responsivo Tablet */
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-}
-
-/* Responsivo Desktop */
-@media screen and (min-width: 1024px) {
 }
 
 @media screen and (min-width: 1100px) {

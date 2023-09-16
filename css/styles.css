@@ -1,2 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 @import url(barra.css);
 @import url(rodape.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navegacao-mobile {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header {
+    justify-content: start;
+  }
+
+  .btn-menu-mobile {
+    display: none;
+  }
+
+  .navegacao {
+    padding: 0 5rem;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+  .item a {
+    color: var(--cor-do-nome-da-logo);
+
+    font-size: 1.2rem;
+  }
+  .traduz {
+    display: none;
+  }
+}
