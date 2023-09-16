@@ -53,7 +53,9 @@
   font-size: 1rem;
   color: var(--branco);
   margin-bottom: 0.5rem;
+  padding: 1rem;
   backdrop-filter: blur(5px);
+  border-radius: 1rem;
 }
 
 .text-h1 {
