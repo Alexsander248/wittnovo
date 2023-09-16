@@ -119,7 +119,6 @@
 /* Fim Primeira Parte */
 
 /* Responsivo Tablet */
-
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .bloco1 {
     background-size: contain;
@@ -127,11 +126,9 @@
 }
 
 /* Responsivo Desktop */
-
 @media screen and (min-width: 1024px) {
-  .botao1 {
-    background-repeat: no-repeat;
-    background-size: auto;
+  .bloco1 {
+    background-size: contain;
   }
   .navegacao-mobile {
     display: none;
@@ -163,10 +160,6 @@
 
     font-size: 1.2rem;
   }
-  .traduz {
-    display: none;
-  }
-
   .botao {
     display: flex;
   }
