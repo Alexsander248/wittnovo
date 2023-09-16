@@ -21,25 +21,25 @@
 
 .bloco1 {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
-  padding: 5px 7%;
   background-image: url("https://i.imgur.com/Q3m3kOc.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3% 3% 2% 3%;
 }
 
 .home-text {
   /* padding-top: 29%; */
-  max-width: 50rem;
+  max-width: 35rem;
 }
 
 .texto {
   font-size: 1rem;
   color: var(--branco);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   backdrop-filter: blur(10px);
 }
 
@@ -131,9 +131,6 @@
 
 /* Responsivo Desktop */
 @media screen and (min-width: 1024px) {
-  .bloco1 {
-    background-size: cover;
-  }
   .navegacao-mobile {
     display: none;
   }
@@ -176,6 +173,11 @@
     font-size: 3.5rem;
     margin-bottom: 1rem;
     padding-bottom: 2%;
+  }
+
+  .bloco1 {
+    background-size: contain;
+    height: 100vw;
   }
 }
 
