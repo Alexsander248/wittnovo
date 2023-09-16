@@ -8,6 +8,10 @@
   --azul: #3140c5;
 }
 
+.botao {
+  display: none;
+}
+
 .header {
   display: flex;
   height: 10vh;
@@ -25,6 +29,10 @@
   color: var(--azul);
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.texto-logo:hover {
+  color: #05062d;
 }
 
 .navegacao {
@@ -149,7 +157,7 @@
 
 /* Responsivo Desktop */
 @media screen and (min-width: 1024px) {
-  button {
+  .botao {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -186,12 +194,12 @@
     transition: all 0.3s;
   }
 
-  button:active,
-  button:hover {
+  .botao:active,
+  .botao:hover {
     outline: 0;
   }
 
-  button span {
+  .botao span {
     background-color: #05062d;
     padding: 11px 16px;
     border-radius: 6px;
@@ -201,11 +209,11 @@
     transition: 300ms;
   }
 
-  button:hover span {
+  .botao:hover span {
     background: none;
   }
 
-  button:active {
+  .botao:active {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
