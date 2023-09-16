@@ -10,7 +10,7 @@
 }
 
 :root {
-  --cor-do-botao-mobile: #ffb800;
+  --cor-do-botao-mobile: #05062d;
   --cor-da-barrinha-do-botao-mobile: #ffffff;
   --cor-do-nome-da-logo: #1e1e1e;
   --cor-fundo-botao-brinde: #a2d6f9;
@@ -51,7 +51,7 @@
 }
 
 .navegacao-mobile {
-  background-color: #ffb7002a;
+  background-color: #0400ff2a;
   backdrop-filter: blur(10px);
   position: absolute;
   display: grid;
@@ -83,7 +83,7 @@
 }
 
 .navegacao-mobile .nav-menu a:hover {
-  background-color: #9e7a1fa1;
+  background-color: #1f219ea1;
 }
 
 .navegacao-mobile.abrir {
