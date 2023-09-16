@@ -161,23 +161,24 @@
 
 .Assistidos p {
   font-size: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .Assistidos h4 {
   font-size: 2;
 }
 
-.sinopse2 {
+.Mais-Assistidos-Titulo {
   margin-top: 25px;
 }
 
-.Mais-Assistidos {
+.Mais-Assistidos-Card {
   display: flex;
   flex-direction: column;
   width: 20rem;
 }
 
-.Mais-Assistidos img {
+.Mais-Assistidos-Card img {
   border-radius: 20px;
   box-shadow: 0px 3px 21px 15px rgba(0, 7, 71, 0.56);
   width: 20rem;
@@ -244,7 +245,7 @@
     height: 100vh;
   }
 
-  .Mais-Assistidos1 {
+  .Mais-Assistidos-Card1 {
     display: flex;
     justify-content: space-between;
     justify-content: space-evenly;
