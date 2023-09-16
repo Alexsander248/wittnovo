@@ -118,9 +118,21 @@
 
 /* Fim Primeira Parte */
 
+/* Responsivo Tablet */
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .bloco1 {
+    background-size: contain;
+  }
+}
+
 /* Responsivo Desktop */
 
 @media screen and (min-width: 1024px) {
+  .botao1 {
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
   .navegacao-mobile {
     display: none;
   }
@@ -158,4 +170,8 @@
   .botao {
     display: flex;
   }
+}
+
+/* Responsivo Responsivo 4k */
+@media screen and (min-width: 1560px) {
 }
