@@ -146,7 +146,6 @@
 .Assistidos {
   font-size: 2.5rem;
   color: white;
-
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -224,7 +223,6 @@
   }
   .item a {
     color: var(--cor-do-nome-da-logo);
-
     font-size: 1.2rem;
   }
   .botao {
@@ -247,16 +245,9 @@
     height: 100vh;
   }
 
-  .Mais-Assistidos-Card1 {
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-evenly;
-    justify-content: space-around;
-    gap: 5rem;
-  }
-
   .Assistidos h2 {
     font-size: 2.5rem;
+    padding: 5rem;
   }
 
   .Assistidos p {
@@ -265,6 +256,15 @@
 
   .Assistidos h4 {
     font-size: 2;
+  }
+  .MaisAssistidos {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Assistidos {
+    display: block;
+    padding-bottom: 30rem;
   }
 }
 
