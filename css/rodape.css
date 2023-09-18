@@ -24,6 +24,7 @@
 .social-icon__item,
 .item {
   list-style: none;
+  color: #fff;
 }
 
 .social-icon__link {
