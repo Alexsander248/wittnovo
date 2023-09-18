@@ -32,28 +32,27 @@
 
 /*  Inicio ScrollBar */
 /* Firefox */
-* {
+/* * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(0, 0, 0) rgba(0, 0, 0, 0);
-}
+  scrollbar-color: white black;
+} */
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-  background-color: rgb(0, 0, 0);
+  width: 0rem;
 }
-*::-webkit-scrollbar-track {
+/* *::-webkit-scrollbar-track {
   border-radius: 4px;
+  background-color: transparent;
 }
 
-/* *::-webkit-scrollbar-track:hover {
-  background-color: rgb(0, 0, 0);
-} */
+*::-webkit-scrollbar-track:hover {
+  background-color: black;
+}
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: white;
+  background-color: transparent;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -62,7 +61,7 @@
 
 *::-webkit-scrollbar-thumb:active {
   background-color: white;
-}
+} */
 
 /* Fim ScrollBar */
 
