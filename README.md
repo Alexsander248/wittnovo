@@ -5,4 +5,8 @@
 Este projeto representa o resultado de uma análise aprofundada das tecnologias web fundamentais: HTML, CSS e JavaScript, implementadas seguindo a abordagem metodológica 'Mobile First'. 
 Sua principal finalidade é o desenvolvimento de uma plataforma de streaming de animes, fortemente influenciada pelas renomadas referências do setor, como Netflix e PrimeVideo.
 
-![](https://github.com/[Site-Wit/wittmain.gif](https://github.com/Alexsander248/Site-Witt/blob/main/img/wittmain.gif)https://github.com/Alexsander248/Site-Witt/blob/main/img/wittmain.gif)
+<div align="center"> 
+
+<img scr="https://i.imgur.com/oksYBtD.mp4" width="700px"/>
+
+</div>
