@@ -32,36 +32,37 @@
 
 /*  Inicio ScrollBar */
 /* Firefox */
-/* * {
+* {
   scrollbar-width: thin;
-  scrollbar-color: white black;
-} */
+  scrollbar-color: rgb(0, 0, 0) rgba(0, 0, 0, 0);
+}
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
-  width: 0rem;
+  width: 8px;
+  background-color: #000000;
 }
-/* *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   border-radius: 4px;
-  background-color: transparent;
-}
-
-*::-webkit-scrollbar-track:hover {
   background-color: black;
 }
 
+/* *::-webkit-scrollbar-track:hover {
+  background-color: rgb(0, 0, 0);
+} */
+
 *::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: transparent;
+  border-radius: 15px;
+  background-color: white;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: white;
-} */
+  background-color: rgb(0, 0, 0);
+}
 
 /* Fim ScrollBar */
 
@@ -73,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("https://i.imgur.com/Q3m3kOc.png");
+  background-image: url("/wittnovo/img/tanjiro.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3% 3% 1% 3%;
