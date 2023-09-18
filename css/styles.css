@@ -30,6 +30,42 @@
   margin-bottom: -1rem;
 }
 
+/*  Inicio ScrollBar */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+}
+*::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+/* *::-webkit-scrollbar-track:hover {
+  background-color: rgb(0, 0, 0);
+} */
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: white;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: white;
+}
+
+/* Fim ScrollBar */
+
 /* Inicio Bloco 1 */
 
 .bloco1 {
