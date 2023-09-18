@@ -9,10 +9,10 @@ Sua principal finalidade é o desenvolvimento de uma plataforma de streaming de 
 
 
 
-Versão para Desktop <br>
+Versão para Desktop da pagina Index <br>
 ![wittmain](https://github.com/Alexsander248/Site-Witt/assets/123756518/39a658e9-520f-47f9-b6b4-6292ac3d6c0f)
 
-Versão para Mobile <br>
+Versão para Mobile da pagina Index <br>
 ![wittmainmobile](https://github.com/Alexsander248/Site-Witt/assets/123756518/4c58c9fc-781b-4fc7-b3c3-5b42fa03c689)
 
 
