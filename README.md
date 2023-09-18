@@ -6,8 +6,10 @@ Este projeto representa o resultado de uma análise aprofundada das tecnologias 
 Sua principal finalidade é o desenvolvimento de uma plataforma de streaming de animes, fortemente influenciada pelas renomadas referências do setor, como Netflix e PrimeVideo.
 
 
-Versão para Desktop <br>
 
+
+
+Versão para Desktop <br>
 ![wittmain](https://github.com/Alexsander248/Site-Witt/assets/123756518/39a658e9-520f-47f9-b6b4-6292ac3d6c0f)
 
 Versão para Mobile <br>
