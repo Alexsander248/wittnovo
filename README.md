@@ -1,3 +1,5 @@
-# Witt
+# Site-Witt
 
-Atualizando o antigo projeto chamado Witt, colocando responsividade, conteudos novos, arrumando codigo e deixando funcional.
+| Resultado do estudo entre HTML , CSS e JavaScript | Usando-se a metodologia "Mobile First" | Uma Plataforma de Streaming de Animes | Principal projeto. |
+
+Criação de uma plataforma de Streaming de Animes, inspirada na Netflix e PrimeVideo
