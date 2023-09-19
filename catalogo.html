@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="js/animar.js" defer></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="=width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/catalogo.css" />
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
-    <title>Witt</title>
-  </head>
+    <head>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="js/animar.js" defer></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta
+            name="viewport"
+            content="=width=device-width, initial-scale=1.0"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/catalogo.css" />
+        <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+        <title>Witt</title>
+    </head>
 </html>
 
 <body>
-  <!-- Barra Navegação -->
-  <header class="header">
-    <div class="logo">
-      <a href="index.html" class="texto-logo">Witt</a>
-    </div>
+    <!-- Barra Navegação -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="texto-logo">Witt</a>
+        </div>
 
-    <div class="btn-barra">
-      <div class="btn-menu-mobile">
-        <div class="barrinha"></div>
-        <div class="barrinha"></div>
-        <div class="barrinha"></div>
-      </div>
-    </div>
+        <div class="btn-barra">
+            <div class="btn-menu-mobile">
+                <div class="barrinha"></div>
+                <div class="barrinha"></div>
+                <div class="barrinha"></div>
+            </div>
+        </div>
 
-    <div class="navegacao">
-      <ul class="nav-menu">
-        <li class="item">
-          <a href="#">Navegar </a>
-        </li>
-      </ul>
-    </div>
-    <button class="botao botao-barra">
-      <span class="text">Entrar</span>
-    </button>
+        <div class="navegacao">
+            <ul class="nav-menu">
+                <li class="item">
+                    <a href="#">Navegar </a>
+                </li>
+            </ul>
+        </div>
+        <button class="botao botao-barra">
+            <span class="text">Entrar</span>
+        </button>
 
-    <div class="navegacao-mobile">
-      <ul class="nav-menu">
-        <li class="item">
-          <a href="#">Navegar </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <!-- Fim Barra Navegação -->
+        <div class="navegacao-mobile">
+            <ul class="nav-menu">
+                <li class="item">
+                    <a href="#">Navegar </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-  <!-- Inicio do Footer -->
-  <!-- <footer class="rodape">
+    <section class="minha-lista">
+        <div class="anime-infos">
+            <h2>Demon Slayer</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deserunt aperiam, voluptas
+            </p>
+
+            <button class="botao"><span class="text">play</span></button>
+        </div>
+
+            <swiper-container
+                slides-per-view="3"
+                space-between="20"
+                loop="true"
+                mousewheel="true"
+            >
+                <swiper-slide>Slide 1</swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide>
+                <swiper-slide>Slide 5</swiper-slide>
+                <swiper-slide>Slide 6</swiper-slide>
+                <swiper-slide>Slide 7</swiper-slide>
+                <swiper-slide>Slide 8</swiper-slide>
+                <swiper-slide>Slide 9</swiper-slide>
+                <swiper-slide>Slide 10</swiper-slide>
+                <swiper-slide>Slide 11</swiper-slide>
+                <swiper-slide>Slide 12</swiper-slide>
+
+            </swiper-container>
+        </div>
+
+    <!-- Fim Barra Navegação -->
+
+    <!-- Inicio do Footer -->
+    <!-- <footer class="rodape">
     <div class="ondas">
       <div class="onda" id="onda1"></div>
       <div class="onda" id="onda2"></div>
@@ -101,5 +139,5 @@
       alexsander.assis@outlook.com | andreluiz01bhz@gmail.com
     </p>
   </footer> -->
-  <!-- Fim do Footer -->
+    <!-- Fim do Footer -->
 </body>
