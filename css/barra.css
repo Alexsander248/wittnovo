@@ -1,10 +1,10 @@
 /*  Connfiguração Geral   */
 
 :root {
-  --cor-do-botao-mobile: #05062d;
-  --cor-da-barrinha-do-botao-mobile: #ffffff;
-  --azul: #3140c5;
-  --hover-logo: #05062d;
+    --cor-do-botao-mobile: #05062d;
+    --cor-da-barrinha-do-botao-mobile: #ffffff;
+    --azul: #3140c5;
+    --hover-logo: #05062d;
 }
 
 /* Fim Connfiguração Geral   */
@@ -12,14 +12,14 @@
 /* Barra Navegação Logo  */
 
 .header .logo .texto-logo {
-  color: var(--azul);
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: 0.5s all;
+    color: var(--azul);
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.5s all;
 }
 
 .header .logo .texto-logo:hover {
-  color: var(--hover-logo);
+    color: var(--hover-logo);
 }
 
 /* Fim Barra Navegação Logo */
@@ -27,73 +27,74 @@
 /* Barra Navegação Navegação  */
 
 .header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 11px 40px;
-  background-color: rgba(4, 0, 15, 0.5);
-  position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 40px;
+    background-color: rgba(4, 0, 15, 0.5);
+    position: absolute;
+    z-index: 999;
 }
 
 .nav-menu {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .navegacao .nav-menu a {
-  color: #fff;
-  transition: 0.5s all;
-  font-size: 1.1rem;
+    color: #fff;
+    transition: 0.5s all;
+    font-size: 1.1rem;
 }
 
 .navegacao a:hover {
-  color: rgb(0, 2, 128);
+    color: rgb(0, 2, 128);
 }
 
 .navegacao-mobile {
-  background-color: rgba(4, 0, 255, 0.165);
-  backdrop-filter: blur(10px);
-  position: absolute;
-  display: grid;
-  place-items: center;
-  top: 10vh;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  z-index: 9;
+    background-color: rgba(4, 0, 255, 0.165);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 9;
 }
 
 .nav-menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: right;
-  list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: right;
+    list-style: none;
 }
 
 .navegacao-mobile .nav-menu a {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  display: block;
-  padding: 20px 30px;
-  font-size: 2rem;
-  font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 20px 30px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .navegacao-mobile .nav-menu a:hover {
-  background-color: #1f219ea1;
+    background-color: #1f219ea1;
 }
 
 .navegacao-mobile.abrir {
-  visibility: visible;
+    visibility: visible;
 }
 
 .navegacao {
-  display: none;
+    display: none;
 }
 
 /* Fim Barra Navegação Navegação  */
@@ -101,40 +102,40 @@
 /* Barra Navegação Barrinha  */
 
 .btn-barra {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .btn-menu-mobile {
-  width: 35px;
-  height: 35px;
-  background-color: var(--cor-do-botao-mobile);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-  border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--cor-do-botao-mobile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    border-radius: 4px;
 }
 
 .barrinha {
-  height: 4px;
-  width: 60%;
-  border-radius: 10px;
-  background-color: var(--cor-da-barrinha-do-botao-mobile);
-  transition: 0.3s;
+    height: 4px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: var(--cor-da-barrinha-do-botao-mobile);
+    transition: 0.3s;
 }
 
 .btn-menu-mobile.ativo .barrinha:nth-child(1) {
-  transform: translateY(5px) rotate(50deg);
+    transform: translateY(5px) rotate(50deg);
 }
 
 .btn-menu-mobile.ativo .barrinha:nth-child(2) {
-  display: none;
+    display: none;
 }
 
 .btn-menu-mobile.ativo .barrinha:nth-child(3) {
-  transform: translateY(-2px) rotate(-50deg);
+    transform: translateY(-2px) rotate(-50deg);
 }
 
 /* Fim Barra Navegação Barrinha  */
