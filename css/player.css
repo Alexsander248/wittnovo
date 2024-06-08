@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 
 .input {
   color: #ffffff;
@@ -18,25 +18,20 @@
   color: white;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
-
 }
 
 :root {
   --azul: #3140c5;
   --branco: #ecedf7;
   --preto: #1e1c2a;
-
 }
-
 
 /* BOTAO */
 
@@ -44,14 +39,14 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
   border-radius: 8px;
   -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,8 +68,8 @@ button {
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 button:active,
@@ -102,7 +97,6 @@ button:active {
   transform: scale(0.9);
 }
 
-
 /* FIM DO BOTAO */
 
 /* Barra topo */
@@ -118,16 +112,13 @@ button:active {
   background-color: rgba(13, 1, 46, 0.5);
   z-index: 11;
   margin-bottom: 2rem;
-
 }
-
 
 .navigation .logo {
   color: var(--azul);
   font-size: 2rem;
   font-weight: 600;
 }
-
 
 .navigation ul {
   display: flex;
@@ -140,7 +131,6 @@ button:active {
   font-size: 17px;
   font-weight: 500;
   transition: all 0.5seg;
-
 }
 
 .navigation ul li a:hover {
@@ -150,12 +140,9 @@ button:active {
 .navigation i {
   cursor: pointer;
   font-size: 1.5rem;
-
-
 }
 
 /* Fim Barra topo */
-
 
 body {
   background-color: black;
@@ -247,11 +234,10 @@ body {
   height: 10px;
   border-radius: 38px;
   background-color: rgba(248, 248, 248, 0.53);
-
 }
 
 .tempo {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .fa-volume-off,
@@ -269,12 +255,10 @@ body {
   width: 50px;
 }
 
-.seta{
+.seta {
   width: 55px;
   align-items: center;
 }
-
-
 
 .regula_vol {
   width: 70px;
@@ -287,13 +271,12 @@ body {
 }
 
 .slide-top {
-  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-bottom {
-  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 
 @keyframes slide-top {
   0% {
@@ -322,8 +305,6 @@ body {
 }
 
 /* Fim Player */
-
-
 
 /* Descrição */
 .descricao {
@@ -364,8 +345,6 @@ body {
   width: 210px;
 }
 
-
-
 .btn {
   display: flex;
   align-items: center;
@@ -378,35 +357,36 @@ body {
 }
 
 .btn::after {
-  content: 'Favoritar';
+  content: "Favoritar";
   width: fit-content;
   height: fit-content;
   position: absolute;
   font-size: 15px;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   opacity: 0;
   visibility: hidden;
-  transition: .2s linear;
+  transition: 0.2s linear;
   top: 115%;
 }
 
 .icon {
   width: 30px;
   height: 30px;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 .icon path {
   fill: white;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
-.btn:hover>.icon {
+.btn:hover > .icon {
   transform: scale(1.2);
 }
 
-.btn:hover>.icon path {
+.btn:hover > .icon path {
   fill: rgb(177, 139, 189);
 }
 
@@ -416,9 +396,7 @@ body {
   top: 105%;
 }
 
-
 /* Fim Descrição */
-
 
 /* Inicio */
 .inicio {
@@ -428,10 +406,6 @@ body {
 }
 
 /* Fim Inicio */
-
-
-
-
 
 /* Temporadas */
 /* Botao */
@@ -458,7 +432,6 @@ body {
   height: 40px;
   margin-top: 3rem;
   margin-bottom: 3rem;
-
 }
 
 .option {
@@ -475,21 +448,17 @@ body {
   pointer-events: none;
   order: 2;
   z-index: 1;
-  transition: background .4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
   color: white;
   font-size: 30px;
 
-
   color: white;
   padding-left: 3rem;
   font-weight: bold;
-
-
 }
-
 
 .temporadas {
   font-size: 30px;
@@ -514,7 +483,7 @@ input {
   left: -99999px;
 }
 
-input:checked+label {
+input:checked + label {
   order: 1;
   z-index: 2;
   background: black;
@@ -523,8 +492,8 @@ input:checked+label {
 }
 
 /* Aumentar tamanho */
-input:checked+label:after {
-  content: '';
+input:checked + label:after {
+  content: "";
   width: 10px;
   height: 0;
   border-left: 10px solid transparent;
@@ -537,20 +506,16 @@ input:checked+label:after {
   z-index: 3;
 }
 
-input:checked+label:before {
+input:checked + label:before {
   position: absolute;
   right: 0;
   height: 40px;
   width: 40px;
-  content: '';
+  content: "";
   /* background:#666; */
 }
 
 /* Fim Botao */
-
-
-
-
 
 /* Carrosel */
 .container2 {
@@ -559,7 +524,6 @@ input:checked+label:before {
   z-index: 10;
   width: 100%;
   margin-bottom: 3rem;
-
 }
 
 .container2 P {
@@ -569,13 +533,11 @@ input:checked+label:before {
   font-weight: bold;
 }
 
-
 .carrossel2 img {
   border-radius: 30px;
   width: 290px;
   height: 190px;
 }
-
 
 .carrossel2 {
   display: flex;
@@ -584,8 +546,6 @@ input:checked+label:before {
   overflow: hidden;
   scroll-behavior: smooth;
   padding-left: 1.5rem;
-
-
 }
 
 .carrossel2 img:hover {
@@ -598,7 +558,6 @@ input:checked+label:before {
   width: 300px;
   height: 200px;
 }
-
 
 .scale-up-center {
   animation: scale-up-center 0.4s ease-in both;
@@ -623,9 +582,6 @@ input:checked+label:before {
     transform: scale(1);
   }
 }
-
-
-
 
 /* Recomendacoes */
 
@@ -655,7 +611,6 @@ input:checked+label:before {
   width: 290px;
   height: 190px;
 }
-
 
 .subtitulo {
   color: white;

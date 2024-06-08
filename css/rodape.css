@@ -1,5 +1,6 @@
 /* Rodapé */
 
+/* Estilização do rodapé */
 .rodape {
   position: relative;
   background: #3586ff;
@@ -11,6 +12,7 @@
   flex-direction: column;
 }
 
+/* Estilização dos ícones e do menu */
 .icones,
 .menu {
   position: relative;
@@ -21,12 +23,14 @@
   flex-wrap: wrap;
 }
 
+/* Estilização dos ícones sociais e dos itens do menu */
 .social-icon__item,
 .item {
   list-style: none;
   color: #fff;
 }
 
+/* Estilização dos links dos ícones sociais */
 .social-icon__link {
   font-size: 2rem;
   color: #fff;
@@ -39,6 +43,7 @@
   transform: translateY(-10px);
 }
 
+/* Estilização dos links do menu */
 .link {
   font-size: 1.2rem;
   color: #fff;
@@ -54,6 +59,7 @@
   opacity: 1;
 }
 
+/* Estilização dos parágrafos no rodapé */
 .rodape p {
   color: #fff;
   margin: 15px 0 10px 0;
@@ -62,6 +68,7 @@
   text-align: center;
 }
 
+/* Estilização das ondas no rodapé */
 .onda {
   position: absolute;
   top: -100px;
@@ -72,6 +79,7 @@
   background-size: 1000px 100px;
 }
 
+/* Estilização da primeira onda */
 .onda#onda1 {
   z-index: 1000;
   opacity: 1;
@@ -79,6 +87,7 @@
   animation: animateWaves 9s linear infinite;
 }
 
+/* Estilização da segunda onda */
 .onda#onda2 {
   z-index: 999;
   opacity: 0.5;
@@ -86,6 +95,7 @@
   animation: animate 7s linear infinite !important;
 }
 
+/* Estilização da terceira onda */
 .onda#onda3 {
   z-index: 1000;
   opacity: 0.2;
@@ -93,6 +103,7 @@
   animation: animateWaves 6s linear infinite;
 }
 
+/* Estilização da quarta onda */
 .onda#onda4 {
   z-index: 999;
   opacity: 0.7;
@@ -100,6 +111,7 @@
   animation: animate 5s linear infinite;
 }
 
+/* Animação das ondas */
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
@@ -110,6 +122,7 @@
   }
 }
 
+/* Animação das ondas */
 @keyframes animate {
   0% {
     background-position-x: -1000px;

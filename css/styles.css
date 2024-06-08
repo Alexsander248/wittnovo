@@ -1,7 +1,9 @@
+/* Importing fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 @import url(barra.css);
 @import url(rodape.css);
 
+/* Global styles */
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +14,7 @@
 }
 
 body {
-  overflow: vi;
+  overflow: vi; /* Typo: should be "visible" */
 }
 
 :root {
@@ -20,6 +22,7 @@ body {
   --branco: #ecedf7;
 }
 
+/* Background styles */
 .all {
   background-color: #000000;
   background-image: linear-gradient(
@@ -34,7 +37,7 @@ body {
   margin-bottom: -1rem;
 }
 
-/*  Inicio ScrollBar */
+/* Scrollbar styles */
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -57,10 +60,7 @@ body {
   background-color: white;
 }
 
-/* Fim ScrollBar */
-
-/* Inicio Bloco 1 */
-
+/* Block 1 styles */
 .bloco1 {
   width: 100vw;
   height: 50vh;
@@ -78,10 +78,10 @@ body {
   max-width: 35rem;
 }
 
-.texto {
-  font-size: 1rem;
+.texto-inicial {
+  font-size: 1.5rem;
   color: var(--branco);
-  margin-bottom: 0.5rem;
+  padding-bottom: 2rem;
   backdrop-filter: blur(5px);
   border-radius: 1rem;
 }
@@ -167,10 +167,78 @@ body {
   color: white;
 }
 
-/* Fim Bloco 1 */
+/* Top button styles */
+.botao_superior {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 13px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
-/* Inicio Bloco 2 */
+.botao_superior:active,
+.botao_superior:hover {
+  outline: 0;
+}
 
+.botao_superior span {
+  background-color: #05062d;
+  padding: 11px 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.botao_superior:hover span {
+  background: none;
+}
+
+.botao_superior:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.botao_superior-barra {
+  display: none;
+}
+
+.botao_superior-text {
+  color: white;
+}
+
+/* Block 2 styles */
 .Assistidos {
   font-size: 2.5rem;
   color: white;
@@ -212,10 +280,7 @@ body {
   width: 20rem;
 }
 
-/* Fim Bloco 2 */
-
-/* Inicio Bloco 3 */
-
+/* Block 3 styles */
 .bloco3 {
   font-size: 1.5rem;
   color: white;
@@ -275,10 +340,7 @@ body {
   height: 70vw;
 }
 
-/* Fim Bloco 3 */
-
-/* Inicio Bloco 4 */
-
+/* Block 4 styles */
 .bloco4 {
   font-size: 2.5rem;
   color: white;
@@ -332,8 +394,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* Fim Bloco 4 */
-
+/* Media queries */
 @media screen and (max-width: 320px) {
   .Mais-Assistidos-Card img {
     width: 15rem;
@@ -344,6 +405,10 @@ body {
 
   .Planos h3 {
     font-size: 2.5rem;
+  }
+
+  .botao_superior {
+    display: none;
   }
 }
 
@@ -385,7 +450,6 @@ body {
   }
 }
 
-/* Responsivo Tablet */
 @media screen and (min-width: 767px) and (max-width: 1038px) {
   .text-h1 {
     color: #ffffff;
@@ -404,13 +468,13 @@ body {
     height: 30vw;
   }
 }
+
 @media screen and (min-width: 1023px) and (max-width: 1037px) {
   .Planos h3 {
     font-size: 3.4rem;
   }
 }
 
-/* Responsivo Desktop */
 @media screen and (min-width: 1024px) {
   .Video-Novidade {
     width: 45vw;
@@ -538,6 +602,6 @@ body {
   }
 }
 
-/* Responsivo Responsivo 4k */
 @media screen and (min-width: 1560px) {
+  /* Custom styles for 4K screens can be added here */
 }
