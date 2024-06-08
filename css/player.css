@@ -141,7 +141,9 @@ button:active {
   cursor: pointer;
   font-size: 1.5rem;
 }
-
+.botao-text {
+  color: white;
+}
 /* Fim Barra topo */
 
 body {
