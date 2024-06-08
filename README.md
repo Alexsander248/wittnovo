@@ -13,9 +13,17 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - CSS3: Para a estilização e design responsivo.
 - JavaScript: Para a interatividade e funcionalidades do site.
 
+## Versões
+
+Versão para Desktop da pagina Index: <br>
+![wittmain](https://github.com/Alexsander248/Site-Witt/assets/123756518/39a658e9-520f-47f9-b6b4-6292ac3d6c0f)
+
+Versão para Mobile da pagina Index: <br>
+![wittmainmobile](https://github.com/Alexsander248/Site-Witt/assets/123756518/4c58c9fc-781b-4fc7-b3c3-5b42fa03c689)
+
 ## Páginas
 
-### Index
+### Index - Responsivo
 
 A página inicial do projeto, também conhecida como 'Index', é a primeira página que os usuários veem ao acessar o site. Ela apresenta os destaques do momento, incluindo os animes mais populares e os recém-adicionados. Além disso, a página Index também fornece informações sobre os preços dos diferentes planos de assinatura disponíveis.
 
@@ -56,9 +64,3 @@ Nosso site suporta vários idiomas, tornando-o acessível para fãs de anime em 
 ### Notificações
 
 Os usuários podem se inscrever para receber notificações sobre novos episódios de seus animes favoritos, atualizações de blog, e outros conteúdos relevantes.
-
-Versão para Desktop da pagina Index: <br>
-![wittmain](https://github.com/Alexsander248/Site-Witt/assets/123756518/39a658e9-520f-47f9-b6b4-6292ac3d6c0f)
-
-Versão para Mobile da pagina Index: <br>
-![wittmainmobile](https://github.com/Alexsander248/Site-Witt/assets/123756518/4c58c9fc-781b-4fc7-b3c3-5b42fa03c689)
