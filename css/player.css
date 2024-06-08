@@ -314,13 +314,10 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(14, 15, 18, 0.3);
-  /* background-color: #0E0F12; */
-  height: 72vh;
-  width: 70vh;
+  height: 50%;
+  width: 50%;
   border-radius: 20px;
   margin: 0px 0px 0px 50px;
-  /* box-sizing: border-box; */
-  /* display: grid; */
 }
 
 .texto {
@@ -337,6 +334,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 5%;
 }
 
 .studio {
@@ -346,29 +344,11 @@ body {
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 5rem;
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: none;
   background-color: transparent;
-}
-
-.btn::after {
-  content: "Favoritar";
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  font-size: 15px;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s linear;
-  top: 115%;
 }
 
 .icon {

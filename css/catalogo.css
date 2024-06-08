@@ -201,7 +201,7 @@ body {
 
 /* Fim Primeira Parte */
 
-.container {
+.primeiroCarrossel {
   position: absolute;
   bottom: -175px;
   left: 0;
@@ -209,7 +209,7 @@ body {
   width: 100%;
 }
 
-.container P {
+.primeiroCarrossel P {
   color: white;
   font-size: 35px;
   padding-left: 3rem;
@@ -239,7 +239,7 @@ body {
 
 /* ----------------------------------------------------------- */
 
-.container2 {
+.segundoCarrossel {
   bottom: -110px;
   left: 0;
   z-index: 10;
@@ -247,20 +247,20 @@ body {
   margin-bottom: 3rem;
 }
 
-.container2 P {
+.segundoCarrossel P {
   color: white;
   font-size: 35px;
   padding-left: 3rem;
   font-weight: bold;
 }
 
-.carrossel2 img {
+.carrossel img {
   border-radius: 30px;
   width: 300px;
   height: 200px;
 }
 
-.carrossel2 {
+.carrossel {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -269,13 +269,13 @@ body {
   padding-left: 1.5rem;
 }
 
-.carrossel2 img:hover {
+.carrossel img:hover {
   width: 350px;
   height: 250px;
   transition: ease-in;
 }
 
-.carrossel2 a {
+.carrossel a {
   width: 300px;
   height: 200px;
 }
@@ -306,20 +306,6 @@ body {
   100% {
     transform: scale(1);
   }
-}
-
-.minha-lista {
-  height: 40vh;
-  display: flex;
-  align-items: flex-end;
-  background-image: url("../img/img1.jpe"); /*Deve mudar de acordo com o evento*/
-  background-size: cover;
-  position: relative;
-}
-
-.anime-infos {
-  color: white;
-  margin-bottom: 2rem;
 }
 
 swiper-container {
