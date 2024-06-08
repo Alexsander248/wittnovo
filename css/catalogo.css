@@ -1,49 +1,345 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
-@import url(barra.css);
-@import url(rodape.css);
-@import url(styles.css);
+
+.input {
+  color: #ffffff;
+  border: 3px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  width: 350px;
+  height: 45px;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.input::placeholder {
+  font-size: 0.8rem;
+  color: white;
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --azul: #3140c5;
+  --branco: #ecedf7;
+  --preto: #1e1c2a;
+}
+
+/* BOTAO */
+
+button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 11px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 11px 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* FIM DO BOTAO */
+
+/* Barra topo */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 40px;
+  width: 100%;
+  transition: all 0.5s;
+  position: inherit;
+  background-color: rgba(4, 0, 15, 0.5);
+  position: absolute;
+  z-index: 11;
+}
+
+.m {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.navigation .logo {
+  color: var(--azul);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+  color: var(--branco);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.5seg;
+}
+
+.navigation ul li a:hover {
+  color: rgb(0, 2, 128);
+}
+
+.navigation i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Fim Barra topo */
+
+body {
+  background-color: black;
+}
+
+/* Primeira Parte */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 7%;
+  background-image: url("https://giffiles.alphacoders.com/215/215478.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 7%;
+  background-image: url("../img/chainsaw2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text {
+  max-width: 50rem;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.texto {
+  font-size: 1.6rem;
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.text-h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2%;
+  color: var(--branco);
+}
+
+/* Fim Primeira Parte */
+
+.container {
+  position: absolute;
+  bottom: -175px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.container P {
+  color: white;
+  font-size: 35px;
+  padding-left: 3rem;
+  font-weight: bold;
+}
+
+.carrossel img {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-left: 1.5rem;
+  height: 16rem;
+}
+
+.carrossel a {
+  width: 300px;
+  height: 200px;
+}
+
+/* ----------------------------------------------------------- */
+
+.container2 {
+  bottom: -110px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.container2 P {
+  color: white;
+  font-size: 35px;
+  padding-left: 3rem;
+  font-weight: bold;
+}
+
+.carrossel2 img {
+  border-radius: 30px;
+  width: 300px;
+  height: 200px;
+}
+
+.carrossel2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-left: 1.5rem;
+}
+
+.carrossel2 img:hover {
+  width: 350px;
+  height: 250px;
+  transition: ease-in;
+}
+
+.carrossel2 a {
+  width: 300px;
+  height: 200px;
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.scale-down-center {
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .minha-lista {
-    height: 40vh;
-    display: flex;
-    align-items: flex-end;
-    background-image: url("../img/img1.jpe"); /*Deve mudar de acordo com o evento*/
-    background-size: cover;
-    position: relative;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../img/img1.jpe"); /*Deve mudar de acordo com o evento*/
+  background-size: cover;
+  position: relative;
 }
 
 .anime-infos {
-    color: white;
-    margin-bottom: 2rem;
+  color: white;
+  margin-bottom: 2rem;
 }
 
 swiper-container {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: -80px;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: -80px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: yellowgreen;
+  background-color: yellowgreen;
 }
 
 swiper-slide {
-    text-align: center;
-    width: 50px;
-    font-size: 18px;
-    background: #e1e1e1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  width: 50px;
+  font-size: 18px;
+  background: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+  <title>Witt - Cadastro </title>
+</head>
+
+<body>
+
+  <div class="tudo">
+    <div id="msg_erro"></div>
+    <div id="msg_sucesso"></div>
+    <form action="#">
+      <div class="title">Witt <br> Cadastre-se</div>
+      <div class="input-box">
+        <input class="input-required" oninput="emailValidate()" type="text" placeholder="Digite seu Email">
+        <span class="required">*Digite um e-mail válido</span>
+        <div class="underline"></div>
+      </div>
+      <div class="input-box">
+        <input class="input-required" oninput="senhaValidate()" type="password" placeholder="Digite sua Senha">
+        <span class="required">*A senha deve ser maior que 8 caracteres</span>
+        <div class="underline"></div>
+      </div>
+
+      <div class="input-box">
+        <input class="input-required" oninput="repeteSenhaValidate()" type="password"
+          placeholder="Digite sua Senha Novamente">
+        <span class="required">*A senha deve ser igual a anterior</span>
+        <div class="underline"></div>
+      </div>
+
+      <div class="input-box button">
+        <input type="submit" name="" onclick="cadastrar()" value="Cadastrar">
+      </div>
+    </form>
+
+    <div class="Texto"> Cadastrar com suas redes-sociais </a> </div>
+
+    <div class="twitter">
+      <a href=""><i class="fab fa-twitter"></i>Cadastrar-se com Twitter</a>
+    </div>
+    <div class="facebook">
+      <a href="#"><i class="fab fa-facebook-f"></i>Cadastrar-se com Facebook</a>
+    </div>
+
+    <div class="Texto">Já possui uma conta? <a href="../Tela_Login/login.html">Entrar </a> </div>
+  </div>
+  <script src="./js/cadastro.js"></script>
+
+
+</body>
+
+</html>
