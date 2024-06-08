@@ -390,19 +390,6 @@ body {
 /* Temporadas */
 /* Botao */
 /* Temporadas */
-/* body {
-    background:#2d2d2d;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-wrap:wrap;
-    padding:0;
-    margin:0;
-    height:100vh;
-    width:100vw;
-    font-family: sans-serif;
-    color:#FFF;
-  } */
 
 .select {
   display: flex;
@@ -448,10 +435,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* .option:hover {
-     background:#666; 
-   */
-
 .select:focus .option {
   position: relative;
   pointer-events: all;
@@ -492,13 +475,12 @@ input:checked + label:before {
   height: 40px;
   width: 40px;
   content: "";
-  /* background:#666; */
 }
 
 /* Fim Botao */
 
 /* Carrosel */
-.container2 {
+.carrosselEpisodios {
   bottom: -110px;
   left: 0;
   z-index: 10;
@@ -506,20 +488,13 @@ input:checked + label:before {
   margin-bottom: 3rem;
 }
 
-.container2 P {
-  color: white;
-  font-size: 35px;
-  padding-left: 3rem;
-  font-weight: bold;
-}
-
-.carrossel2 img {
+.carrosselEpisodios img {
   border-radius: 30px;
   width: 290px;
   height: 190px;
 }
 
-.carrossel2 {
+.carrosselEpisodios {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -528,19 +503,23 @@ input:checked + label:before {
   padding-left: 1.5rem;
 }
 
-.carrossel2 img:hover {
+.carrosselEpisodios img:hover {
   width: 350px;
   height: 250px;
   transition: ease-in;
 }
 
-.carrossel2 a {
+.carrosselEpisodios a {
   width: 300px;
   height: 200px;
 }
 
 .scale-up-center {
-  animation: scale-up-center 0.4s ease-in both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.scale-down-center {
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes scale-up-center {
