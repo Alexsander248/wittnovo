@@ -1,0 +1,14 @@
+{
+  "name": "site-witt",
+  "version": "1.0.0",
+  "description": "| **Witt!** | Resultado do estudo entre **HTML, CSS e JavaScript** | Usando-se a metodologia \"Mobile First\" | Uma Plataforma de Animes |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
