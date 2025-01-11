@@ -441,12 +441,18 @@ body {
   .Mais-Assistidos-Card1 {
     display: none;
   }
+  .btn-menu-mobile {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 371px) and (max-width: 400px) {
   .Planos {
     width: 20rem;
   }
+}
+.btn-menu-mobile {
+  display: none;
 }
 
 @media screen and (min-width: 566px) {
@@ -458,10 +464,16 @@ body {
   .texto {
     font-size: 1.5rem;
   }
+  .btn-menu-mobile {
+    display: none;
+  }
 }
 
 /* Responsivo Tablet */
 @media screen and (min-width: 767px) and (max-width: 1038px) {
+  .btn-menu-mobile {
+    display: none;
+  }
   .text-h1 {
     color: #ffffff;
   }
