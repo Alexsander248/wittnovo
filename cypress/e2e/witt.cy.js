@@ -10,7 +10,7 @@ describe("template spec", () => {
     cy.get(".button > input").click();
     cy.get(":nth-child(7) > a").click();
     cy.get("#email").type("Testecypress@outlook.com.br'");
-    cy.get("#senha").type("cypressteste@witt.com'");
+    cy.get("#senha").type("cypressteste@witt.com");
     cy.get(".logar").click();
   });
 });
