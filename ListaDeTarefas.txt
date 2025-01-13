@@ -1,8 +1,8 @@
 1- Refazer as ondas no rodapé   [FEITO]
 2- corrigir botões "inicie Agora" [FEITO]
 3- corrigir cor do cadastro [FEITO]
-4- tentar salvar em cache o cadastro
-5- criar um hyperlink na tela de cadastro/login [FEITO]
+4- criar um hyperlink na tela de cadastro/login [FEITO]
+5- tentar salvar em cache o cadastro
 6- criar hypertela de compra dos planos
 7- categorizar personagens na index
 8- corrigir carrossel (completo)
