@@ -1,0 +1,11 @@
+1- Refazer as ondas no rodapé   [FEITO]
+2- corrigir botões "inicie Agora"
+3- corrigir cor do cadastro
+4- tentar salvar em cache o cadastro
+5- criar um hyperlink na tela de cadastro/login
+6- criar hypertela de compra dos planos
+7- categorizar personagens na index
+8- corrigir carrossel (completo)
+9- corrigir carrossel play (completo)
+10- separar recomendações por categorias
+11- melhorar a logo
