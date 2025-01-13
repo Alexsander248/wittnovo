@@ -79,7 +79,7 @@ body {
 }
 
 .texto-inicial {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--branco);
   padding-bottom: 2rem;
   backdrop-filter: blur(5px);
@@ -454,13 +454,6 @@ body {
 .btn-menu-mobile {
   display: none;
 }
-.texto-inicial {
-  font-size: 1rem;
-  color: var(--branco);
-  padding-bottom: 2rem;
-  backdrop-filter: blur(5px);
-  border-radius: 1rem;
-}
 
 @media screen and (min-width: 566px) {
   .bloco1 {
@@ -497,10 +490,16 @@ body {
     width: 45vw;
     height: 30vw;
   }
+  .texto-inicial {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1023px) and (max-width: 1037px) {
   .Planos h3 {
     font-size: 3.4rem;
+  }
+  .texto-inicial {
+    font-size: 1.5rem;
   }
 }
 
@@ -562,7 +561,9 @@ body {
     height: 100vh;
     width: 100%;
   }
-
+  .texto-inicial {
+    font-size: 1.5rem;
+  }
   .Assistidos h2 {
     font-size: 3.3rem;
     padding: 5rem;
