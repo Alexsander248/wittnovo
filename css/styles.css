@@ -454,6 +454,13 @@ body {
 .btn-menu-mobile {
   display: none;
 }
+.texto-inicial {
+  font-size: 1rem;
+  color: var(--branco);
+  padding-bottom: 2rem;
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+}
 
 @media screen and (min-width: 566px) {
   .bloco1 {
