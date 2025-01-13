@@ -12,6 +12,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - HTML5: Para a estruturação do site.
 - CSS3: Para a estilização e design responsivo.
 - JavaScript: Para a interatividade e funcionalidades do site.
+- Cypress: Para automatizar os testes.
 
 ## Versões
 
