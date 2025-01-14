@@ -15,84 +15,166 @@
   </head>
 
   <body>
-    <div class="tudo">
-      <!-- Div para exibir mensagens de erro -->
-      <div id="msg_erro"></div>
-      <!-- Div para exibir mensagens de sucesso -->
-      <div id="msg_sucesso"></div>
-
-      <form action="#">
-        <div class="title">
-          <a href="index.html">Witt</a> <br />
-          Cadastre-se
-        </div>
-
-        <!-- Campo de entrada de email -->
-        <div class="input-box">
-          <input
-            class="input-required"
-            oninput="emailValidate()"
-            type="text"
-            placeholder="Digite seu Email"
-          />
-          <span class="required">*Digite um e-mail válido</span>
-          <div class="underline"></div>
-        </div>
-
-        <!-- Campo de entrada de senha -->
-        <div class="input-box">
-          <input
-            class="input-required"
-            oninput="senhaValidate()"
-            type="password"
-            placeholder="Digite sua Senha"
-          />
-          <span class="required">*A senha deve ter mais de 8 caracteres</span>
-          <div class="underline"></div>
-        </div>
-
-        <!-- Campo de confirmação de senha -->
-        <div class="input-box">
-          <input
-            class="input-required"
-            oninput="repeteSenhaValidate()"
-            type="password"
-            placeholder="Digite sua Senha Novamente"
-          />
-          <span class="required">*A senha deve ser igual à anterior</span>
-          <div class="underline"></div>
-        </div>
-
-        <!-- Botão de cadastro -->
-        <div class="input-box button">
-          <input
-            type="submit"
-            name=""
-            onclick="cadastrar()"
-            value="Cadastrar"
-          />
-        </div>
-      </form>
-
-      <!-- Texto para cadastrar com redes sociais -->
-      <div class="Texto">Cadastrar com suas redes sociais</div>
-
-      <!-- Botão de cadastro com Twitter -->
-      <div class="twitter">
-        <a href=""><i class="fab fa-twitter"></i>Cadastrar-se com Twitter</a>
+    <div class="ambos">
+      <div class="lado-esquerdo">
+        <img src="./img/gatinlogin.svg" class="gato" alt="gatinhoastronauta" />
       </div>
 
-      <!-- Botão de cadastro com Facebook -->
-      <div class="facebook">
-        <a href="#"
-          ><i class="fab fa-facebook-f"></i>Cadastrar-se com Facebook</a
-        >
-      </div>
+      <div class="lado-direito">
+        <!-- Div para exibir mensagens de erro -->
+        <div id="msg_erro"></div>
+        <!-- Div para exibir mensagens de sucesso -->
+        <div id="msg_sucesso"></div>
 
-      <!-- Texto para já possuir uma conta -->
-      <div class="Texto">
-        Já possui uma conta? <a href="login.html">Entrar</a>
+        <form action="#">
+          <div class="title">
+            <a href="index.html">Witt</a> <br />
+            Cadastre-se
+          </div>
+
+          <!-- Campo de entrada de email -->
+          <div class="input-box">
+            <input
+              class="input-required"
+              oninput="emailValidate()"
+              type="text"
+              placeholder="Digite seu Email"
+            />
+            <span class="required">*Digite um e-mail válido</span>
+            <div class="underline"></div>
+          </div>
+
+          <!-- Campo de entrada de senha -->
+          <div class="input-box">
+            <input
+              class="input-required"
+              oninput="senhaValidate()"
+              type="password"
+              placeholder="Digite sua Senha"
+            />
+            <span class="required">*A senha deve ter mais de 8 caracteres</span>
+            <div class="underline"></div>
+          </div>
+
+          <!-- Campo de confirmação de senha -->
+          <div class="input-box">
+            <input
+              class="input-required"
+              oninput="repeteSenhaValidate()"
+              type="password"
+              placeholder="Digite sua Senha Novamente"
+            />
+            <span class="required">*A senha deve ser igual à anterior</span>
+            <div class="underline"></div>
+          </div>
+
+          <!-- Botão de cadastro -->
+          <div class="input-box button">
+            <input
+              type="submit"
+              name=""
+              onclick="cadastrar()"
+              value="Cadastrar"
+            />
+          </div>
+        </form>
+
+        <!-- Texto para cadastrar com redes sociais -->
+        <div class="Texto">Cadastrar com suas redes sociais</div>
+
+        <!-- Botão de cadastro com Twitter -->
+        <div class="twitter">
+          <a href=""><i class="fab fa-twitter"></i>Cadastrar-se com Twitter</a>
+        </div>
+
+        <!-- Botão de cadastro com Facebook -->
+        <div class="facebook">
+          <a href="#"
+            ><i class="fab fa-facebook-f"></i>Cadastrar-se com Facebook</a
+          >
+        </div>
+
+        <!-- Texto para já possuir uma conta -->
+        <div class="Texto">
+          Já possui uma conta? <a href="login.html">Entrar</a>
+        </div>
       </div>
     </div>
+
+    <!-- Inicio do Footer -->
+    <footer class="rodape">
+      <div class="ondas">
+        <div class="onda" id="onda1"></div>
+        <div class="onda" id="onda2"></div>
+        <div class="onda" id="onda3"></div>
+        <div class="onda" id="onda4"></div>
+      </div>
+      <ul class="icones">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/a_alexsander/"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Entrar</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Sobre nós</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Planos</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Equipe</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Contato</a
+          >
+        </li>
+      </ul>
+      <p>
+        &copy;2025 Witt Animes | Todos os direitos reservados |
+        alexsander.assis@outlook.com
+      </p>
+    </footer>
+    <!-- Fim do Footer -->
   </body>
 </html>

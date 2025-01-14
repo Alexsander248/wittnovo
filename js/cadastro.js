@@ -3,20 +3,17 @@ const underline = document.querySelectorAll(".underline");
 const spans = document.querySelectorAll(".required");
 const emailRegex = /^[\w+.]+@\w+\.\w{2,}(?:\.\w{2})?$/;
 
-var emailPren = false;
-var senhaPren = false;
-var confSenhaPren = false;
+const msgErro = document.getElementById("msg_erro");
+const msgSucesso = document.getElementById("msg_sucesso");
 
-var msgErro = document.getElementById("msg_erro");
-var msgSucesso = document.getElementById("msg_sucesso");
-
-function setError(i) {
+function setError(i, message = "") {
   underline[i].style.background = "#e63636";
   spans[i].style.display = "block";
+  if (message) spans[i].textContent = message;
 }
 
 function validada(i) {
-  underline[i].style.background = "#008000 ";
+  underline[i].style.background = "#008000";
   spans[i].style.display = "none";
 }
 
@@ -29,48 +26,54 @@ function resetError(i) {
 function emailValidate() {
   if (emailRegex.test(campos[0].value)) {
     validada(0);
-    emailPren = true;
-  } else if (campos[0].value.length == 0) {
+    return true;
+  } else if (campos[0].value.length === 0) {
     resetError(0);
-    emailPren = false;
+    return false;
   } else {
-    setError(0);
-    emailPren = false;
+    setError(0, "Insira um email válido.");
+    return false;
   }
-  return emailPren;
 }
 
 function senhaValidate() {
   if (campos[1].value.length >= 8) {
     validada(1);
-    senhaPren = true;
-  } else if (campos[1].value.length == 0) {
+    return true;
+  } else if (campos[1].value.length === 0) {
     resetError(1);
-    senhaPren = false;
+    return false;
   } else {
-    setError(1);
-    senhaPren = false;
+    setError(1, "A senha deve ter pelo menos 8 caracteres.");
+    return false;
   }
-  return senhaPren;
 }
 
 function repeteSenhaValidate() {
-  if (campos[2].value == campos[1].value) {
+  if (campos[2].value === campos[1].value) {
     validada(2);
-    confSenhaPren = true;
-  } else if (campos[2].value.length == 0) {
+    return true;
+  } else if (campos[2].value.length === 0) {
     resetError(2);
-    confSenhaPren = false;
+    return false;
   } else {
-    setError(2);
-    confSenhaPren = false;
+    setError(2, "As senhas não coincidem.");
+    return false;
   }
-  return confSenhaPren;
+}
+
+function validarCampos() {
+  const emailValido = emailValidate();
+  const senhaValida = senhaValidate();
+  const confSenhaValida = repeteSenhaValidate();
+
+  return emailValido && senhaValida && confSenhaValida;
 }
 
 function cadastrar() {
-  if (emailPren && senhaPren && confSenhaPren) {
-    var listUser = JSON.parse(localStorage.getItem("listUser") || "[]");
+  // Valida todos os campos antes de prosseguir
+  if (validarCampos()) {
+    const listUser = JSON.parse(localStorage.getItem("listUser") || "[]");
     listUser.push({
       email: campos[0].value,
       senha: campos[1].value,
@@ -78,8 +81,8 @@ function cadastrar() {
 
     localStorage.setItem("listUser", JSON.stringify(listUser));
 
-    msgSucesso.setAttribute("style", "display: Block;");
-    msgSucesso.innerHTML = "<strong>Dados Cadastrados com sucesso!</strong>";
+    msgSucesso.setAttribute("style", "display: block;");
+    msgSucesso.innerHTML = "<strong>Dados cadastrados com sucesso!</strong>";
 
     msgErro.setAttribute("style", "display: none;");
     msgErro.innerHTML = "";
@@ -88,11 +91,16 @@ function cadastrar() {
       window.location.href = "/login.html";
     }, 3000);
   } else {
-    msgErro.setAttribute("style", "display: Block;");
+    msgErro.setAttribute("style", "display: block;");
     msgErro.innerHTML =
-      "<strong>Preencha todos os dados corretamente.</strong>";
+      "<strong>Preencha todos os campos corretamente.</strong>";
 
     msgSucesso.setAttribute("style", "display: none;");
     msgSucesso.innerHTML = "";
   }
 }
+
+// Adiciona eventos de validação em tempo real
+campos[0].addEventListener("input", emailValidate);
+campos[1].addEventListener("input", senhaValidate);
+campos[2].addEventListener("input", repeteSenhaValidate);

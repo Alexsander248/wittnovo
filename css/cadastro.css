@@ -13,7 +13,6 @@ body {
   display: grid;
   height: 100vh;
   width: 100%;
-  place-items: center;
   background: linear-gradient(to right, #1e0141 0%, #030168 100%);
 }
 
@@ -21,23 +20,34 @@ body {
   background: #b2b1ee;
 }
 
-.tudo {
+.gato {
+  width: 96%;
+  height: 96%;
+}
+
+.ambos {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lado-direito {
   background: #fff;
-  max-width: 360px;
+  max-width: 380px;
   width: 100%;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
-.tudo form .title {
+.lado-direito form .title {
   font-size: 30px;
   font-weight: 600;
   margin: 20px 0 10px 0;
   position: relative;
 }
 
-.tudo form .title:before {
+.lado-direito form .title:before {
   content: "";
   position: absolute;
   height: 4px;
@@ -48,14 +58,14 @@ body {
   background: linear-gradient(to right, #1e0141 0%, #040275 100%);
 }
 
-.tudo form .input-box {
+.lado-direito form .input-box {
   width: 100%;
   height: 45px;
   margin-top: 25px;
   position: relative;
 }
 
-.tudo form .input-box input {
+.lado-direito form .input-box input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -63,7 +73,7 @@ body {
   border: none;
 }
 
-.tudo form .underline {
+.lado-direito form .underline {
   content: "";
   position: absolute;
   height: 2px;
@@ -74,17 +84,17 @@ body {
   transition: all 0.3s ease;
 }
 
-.tudo form .input-box input:focus ~ .underline::after,
-.tudo form .input-box input:valid ~ .underline::after {
+.lado-direito form .input-box input:focus ~ .underline::after,
+.lado-direito form .input-box input:valid ~ .underline::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.tudo form .button {
+.lado-direito form .button {
   margin: 40px 0 20px 0;
 }
 
-.tudo .input-box input[type="submit"] {
+.lado-direito .input-box input[type="submit"] {
   background: linear-gradient(to right, #1e0141 0%, #03008f 100%);
   font-size: 17px;
   color: #fff;
@@ -93,18 +103,18 @@ body {
   transition: all 0.3s ease;
 }
 
-.tudo .input-box input[type="submit"]:hover {
+.lado-direito .input-box input[type="submit"]:hover {
   letter-spacing: 1px;
   background: linear-gradient(to right, #1e0141 0%, #03008f 100%);
 }
 
-.tudo .Texto {
+.lado-direito .Texto {
   font-size: 14px;
   text-align: center;
 }
 
-.tudo .facebook a,
-.tudo .twitter a {
+.lado-direito .facebook a,
+.lado-direito .twitter a {
   display: block;
   height: 45px;
   width: 100%;
@@ -117,28 +127,28 @@ body {
   transition: all 0.3s ease;
 }
 
-.tudo .facebook i,
-.tudo .twitter i {
+.lado-direito .facebook i,
+.lado-direito .twitter i {
   padding-right: 12px;
   font-size: 20px;
 }
 
-.tudo .twitter a {
+.lado-direito .twitter a {
   background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
   margin: 20px 0 15px 0;
 }
 
-.tudo .twitter a:hover {
+.lado-direito .twitter a:hover {
   background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
   margin: 20px 0 15px 0;
 }
 
-.tudo .facebook a {
+.lado-direito .facebook a {
   background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
   margin: 20px 0 50px 0;
 }
 
-.tudo .facebook a:hover {
+.lado-direito .facebook a:hover {
   background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
   margin: 20px 0 50px 0;
 }
@@ -170,26 +180,162 @@ body {
   width: 100%;
   display: none;
 }
-.tudo form .input-box input[type="text"],
-.tudo form .input-box input[type="email"],
-.tudo form .input-box input[type="password"] {
+.lado-direito form .input-box input[type="text"],
+.lado-direito form .input-box input[type="email"],
+.lado-direito form .input-box input[type="password"] {
   border-bottom: 2px solid #ccc;
   transition: all 0.3s ease;
 }
 
-.tudo form .input-box input[type="text"]:focus,
-.tudo form .input-box input[type="email"]:focus,
-.tudo form .input-box input[type="password"]:focus {
+.lado-direito form .input-box input[type="text"]:focus,
+.lado-direito form .input-box input[type="email"]:focus,
+.lado-direito form .input-box input[type="password"]:focus {
   border-bottom: 2px solid #1e0141;
 }
 
-.tudo form .input-box input[type="text"]::placeholder,
-.tudo form .input-box input[type="email"]::placeholder,
-.tudo form .input-box input[type="password"]::placeholder {
+.lado-direito form .input-box input[type="text"]::placeholder,
+.lado-direito form .input-box input[type="email"]::placeholder,
+.lado-direito form .input-box input[type="password"]::placeholder {
   color: #ccc;
 }
 
-.tudo form .input-box input[type="submit"]:disabled {
+.lado-direito form .input-box input[type="submit"]:disabled {
   background: #ccc;
   cursor: not-allowed;
 }
+
+/* Rodapé */
+
+/* Estilização do rodapé */
+.rodape {
+  margin-top: 10rem;
+  position: relative;
+  background: #3586ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilização dos ícones e do menu */
+.icones,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* Estilização dos ícones sociais e dos itens do menu */
+.social-icon__item,
+.item {
+  list-style: none;
+  color: #fff;
+}
+
+/* Estilização dos links dos ícones sociais */
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilização dos links do menu */
+.link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/* Estilização dos parágrafos no rodapé */
+.rodape p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Estilização das ondas no rodapé */
+.onda {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/wave.png");
+  background-size: 1000px 100px;
+}
+
+/* Estilização da primeira onda */
+.onda#onda1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 9s linear infinite;
+}
+
+/* Estilização da segunda onda */
+.onda#onda2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 7s linear infinite !important;
+}
+
+/* Estilização da terceira onda */
+.onda#onda3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 6s linear infinite;
+}
+
+/* Estilização da quarta onda */
+.onda#onda4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 5s linear infinite;
+}
+
+/* Animação das ondas */
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* Animação das ondas */
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* Fim Rodapé */
