@@ -281,6 +281,12 @@ body {
   border-radius: 20px;
   box-shadow: 0px 3px 21px 15px rgba(0, 7, 71, 0.56);
   width: 20rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Mais-Assistidos-Card img:hover {
+  transform: scale(1.1); /* Expande a imagem em 10% */
+  box-shadow: 0px 6px 30px 20px rgba(0, 7, 71, 0.56); /* Aumenta o efeito da sombra */
 }
 
 /* Fim Bloco 2 */
@@ -316,7 +322,8 @@ body {
   justify-content: center;
   color: white;
   font-size: 3rem;
-  padding: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 
 .Destaque-sinopse {
@@ -329,6 +336,7 @@ body {
 }
 
 .Personagens-Destaque {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -344,6 +352,81 @@ body {
 .Video-Novidade {
   width: 80vw;
   height: 70vw;
+}
+
+.Video-Novidade {
+  width: 45vw;
+  height: 30vw;
+  border: 5px solid;
+  border-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    #182a67 19%,
+    #000000 39%,
+    #46067c 60%,
+    #230a82 80%,
+    #01090e 100%
+  );
+  border-image-slice: 1;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+  animation: rgb-border 3s infinite linear;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 0 0 30px rgba(75, 46, 204, 0.8); /* Borda extra */
+}
+
+@keyframes rgb-border {
+  0% {
+    border-image-source: linear-gradient(
+      180deg,
+      #000000 0%,
+      #182a67 19%,
+      #000000 39%,
+      #46067c 60%,
+      #230a82 80%,
+      #01090e 100%
+    );
+  }
+  25% {
+    border-image-source: linear-gradient(
+      45deg,
+      #182a67 0%,
+      #000000 25%,
+      #46067c 50%,
+      #230a82 75%,
+      #01090e 100%
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      90deg,
+      #000000 0%,
+      #46067c 19%,
+      #182a67 39%,
+      #230a82 60%,
+      #01090e 80%
+    );
+  }
+  75% {
+    border-image-source: linear-gradient(
+      135deg,
+      #230a82 0%,
+      #182a67 19%,
+      #000000 39%,
+      #01090e 60%,
+      #46067c 80%
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      180deg,
+      #000000 0%,
+      #182a67 19%,
+      #000000 39%,
+      #46067c 60%,
+      #230a82 80%,
+      #01090e 100%
+    );
+  }
 }
 
 /* Fim Bloco 3 */
@@ -508,7 +591,78 @@ body {
   .Video-Novidade {
     width: 45vw;
     height: 30vw;
+    border: 5px solid;
+    border-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      #182a67 19%,
+      #000000 39%,
+      #46067c 60%,
+      #230a82 80%,
+      #01090e 100%
+    );
+    border-image-slice: 1;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+    animation: rgb-border 3s infinite linear;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 0 0 30px rgba(75, 46, 204, 0.8); /* Borda extra */
   }
+
+  @keyframes rgb-border {
+    0% {
+      border-image-source: linear-gradient(
+        180deg,
+        #000000 0%,
+        #182a67 19%,
+        #000000 39%,
+        #46067c 60%,
+        #230a82 80%,
+        #01090e 100%
+      );
+    }
+    25% {
+      border-image-source: linear-gradient(
+        45deg,
+        #182a67 0%,
+        #000000 25%,
+        #46067c 50%,
+        #230a82 75%,
+        #01090e 100%
+      );
+    }
+    50% {
+      border-image-source: linear-gradient(
+        90deg,
+        #000000 0%,
+        #46067c 19%,
+        #182a67 39%,
+        #230a82 60%,
+        #01090e 80%
+      );
+    }
+    75% {
+      border-image-source: linear-gradient(
+        135deg,
+        #230a82 0%,
+        #182a67 19%,
+        #000000 39%,
+        #01090e 60%,
+        #46067c 80%
+      );
+    }
+    100% {
+      border-image-source: linear-gradient(
+        180deg,
+        #000000 0%,
+        #182a67 19%,
+        #000000 39%,
+        #46067c 60%,
+        #230a82 80%,
+        #01090e 100%
+      );
+    }
+  }
+
   .navegacao-mobile {
     display: none;
   }
@@ -606,7 +760,8 @@ body {
     justify-content: center;
     color: white;
     font-size: 3.5rem;
-    padding: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
   }
 
   .Destaque-Titulo {
@@ -625,7 +780,12 @@ body {
   }
 
   .Personagens-Destaque {
-    gap: 3rem;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .Personagens-Destaque img {
+    width: 10rem;
   }
 
   .bloco4 {

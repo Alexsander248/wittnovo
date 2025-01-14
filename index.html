@@ -9,7 +9,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <script src="/js/index.js" defer></script>
     <script src="js/animar.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="=width=device-width, initial-scale=1.0" />
@@ -129,17 +133,24 @@
         </p>
 
         <div class="Personagens-Destaque">
-          <img src="img/img4.png" class="Personagens-img" />
-          <img src="img/img6.jpg" class="Personagens-img" />
-          <img src="img/img5.jpg" class="Personagens-img" />
+          <div class="Personagem-1">
+            <img src="img/img4.png" class="Personagens-img" />
+          </div>
+          <div class="Personagem-2">
+            <img src="img/img6.jpg" class="Personagens-img" />
+          </div>
+          <div class="Personagem-3">
+            <img src="img/img5.jpg" class="Personagens-img" />
+          </div>
         </div>
       </div>
 
       <div class="Novidades-video">
         <div class="Video">
           <iframe
+            id="videoIframe"
             class="Video-Novidade"
-            src="https://www.youtube.com/embed/bbWXrzOWWu4?si=wlSbksftY6clP07P"
+            src="https://www.youtube.com/embed/bbWXrzOWWu4?enablejsapi=1&autohide=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
