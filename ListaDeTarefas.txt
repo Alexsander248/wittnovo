@@ -11,3 +11,8 @@
 11- melhorar a logo
 12- Adicionar JS nos personagens da index [FEITO]
 13- adicionar JS no video da index [FEITO]
+14- adicionar rodape na tela de login [FEITO]
+15- adicionar rodape na tela de cadastro
+16- adicionar gato astronauta no login [FEITO]
+17- adicionar gato astronauta no cadastro 
+

@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
     <title>Witt - Login</title>
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="css/login.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -15,52 +14,136 @@
   </head>
 
   <body>
-    <div class="tudo">
-      <form action="#">
-        <div id="msg_erro"></div>
-        <div class="title">
-          <a href="index.html">Witt</a> <br />
-          <span class="entrar">Entrar</span>
-        </div>
-
-        <!-- Email input -->
-        <div class="input-box">
-          <input type="text" id="email" placeholder="Digite seu Email" />
-          <div class="underline"></div>
-        </div>
-
-        <!-- Password input -->
-        <div class="input-box">
-          <input type="password" id="senha" placeholder="Digite sua Senha" />
-          <div class="underline"></div>
-        </div>
-
-        <!-- Login button -->
-        <div class="input-box button">
-          <input class="logar" onclick="logar()" name="" value="Entrar" />
-        </div>
-
-        <!-- Forgot password link -->
-        <div class="Texto"><a href="cadastro.html">Esqueceu sua senha?</a></div>
-      </form>
-
-      <div class="Texto">Entre com suas redes-sociais</div>
-
-      <!-- Twitter login button -->
-      <div class="twitter">
-        <a href="#"><i class="fab fa-twitter"></i>Entrar com Twitter</a>
+    <div class="ambos">
+      <div class="lado-esquerdo">
+        <img src="./img/gatinlogin.svg" class="gato" alt="gatinhoastronauta" />
       </div>
 
-      <!-- Facebook login button -->
-      <div class="facebook">
-        <a href="#"><i class="fab fa-facebook-f"></i>Entrar com Facebook</a>
-      </div>
+      <div class="lado-direito">
+        <form action="#">
+          <div id="msg_erro"></div>
+          <div class="title">
+            <a href="index.html">Witt</a> <br />
+            <span class="entrar">Entrar</span>
+          </div>
 
-      <!-- Sign up link -->
-      <div class="Texto">
-        Não tem uma conta? <a href="cadastro.html">Cadastre-se!</a>
+          <!-- Email input -->
+          <div class="input-box">
+            <input type="text" id="email" placeholder="Digite seu Email" />
+            <div class="underline"></div>
+          </div>
+
+          <!-- Password input -->
+          <div class="input-box">
+            <input type="password" id="senha" placeholder="Digite sua Senha" />
+            <div class="underline"></div>
+          </div>
+
+          <!-- Login button -->
+          <div class="input-box button">
+            <input class="logar" onclick="logar()" name="" value="Entrar" />
+          </div>
+
+          <!-- Forgot password link -->
+          <div class="Texto">
+            <a href="cadastro.html">Esqueceu sua senha?</a>
+          </div>
+        </form>
+
+        <div class="Texto">Entre com suas redes-sociais</div>
+
+        <!-- Twitter login button -->
+        <div class="twitter">
+          <a href="#"><i class="fab fa-twitter"></i>Entrar com Twitter</a>
+        </div>
+
+        <!-- Facebook login button -->
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Entrar com Facebook</a>
+        </div>
+
+        <!-- Sign up link -->
+        <div class="Texto">
+          Não tem uma conta? <a href="cadastro.html">Cadastre-se!</a>
+        </div>
       </div>
     </div>
+
+    <!-- Inicio do Footer -->
+    <footer class="rodape">
+      <div class="ondas">
+        <div class="onda" id="onda1"></div>
+        <div class="onda" id="onda2"></div>
+        <div class="onda" id="onda3"></div>
+        <div class="onda" id="onda4"></div>
+      </div>
+      <ul class="icones">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/alexsander-alcantara/"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/a_alexsander/"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Entrar</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Sobre nós</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Planos</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Equipe</a
+          >
+        </li>
+        <li class="item">
+          <a class="link" href="https://www.instagram.com/a_alexsander/"
+            >Contato</a
+          >
+        </li>
+      </ul>
+      <p>
+        &copy;2025 Witt Animes | Todos os direitos reservados |
+        alexsander.assis@outlook.com
+      </p>
+    </footer>
+    <!-- Fim do Footer -->
 
     <!-- JavaScript file -->
     <script src="./js/login.js"></script>
