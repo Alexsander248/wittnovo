@@ -33,7 +33,7 @@ function logar() {
 
     // Redireciona para a página inicial após 2 segundos
     setTimeout(() => {
-      window.location.href = "cadastro.html";
+      window.location.href = "./cadastro.html";
     }, 2000);
   }
 }

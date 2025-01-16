@@ -85,7 +85,7 @@ function cadastrar() {
     msgErro.innerHTML = "";
 
     setTimeout(() => {
-      window.location.href = "/login.html";
+      window.location.href = "./login.html";
     }, 3000);
   } else {
     msgErro.setAttribute("style", "display: Block;");

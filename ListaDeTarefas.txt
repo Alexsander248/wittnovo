@@ -2,7 +2,7 @@
 2- corrigir botões "inicie Agora" [FEITO]
 3- corrigir cor do cadastro [FEITO]
 4- criar um hyperlink na tela de cadastro/login [FEITO]
-5- tentar salvar em cache o cadastro
+5- tentar salvar em cache o cadastro [FEITO]
 6- criar hypertela de compra dos planos
 7- categorizar personagens na index [FEITO]
 8- corrigir carrossel (completo)
@@ -12,7 +12,7 @@
 12- Adicionar JS nos personagens da index [FEITO]
 13- adicionar JS no video da index [FEITO]
 14- adicionar rodape na tela de login [FEITO]
-15- adicionar rodape na tela de cadastro
+15- adicionar rodape na tela de cadastro [FEITO]
 16- adicionar gato astronauta no login [FEITO]
-17- adicionar gato astronauta no cadastro 
+17- adicionar gato astronauta no cadastro [FEITO]
 
