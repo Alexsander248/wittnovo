@@ -22,9 +22,9 @@
       <nav class="navigation">
         <a href="index.html" class="logo">Witt</a>
         <ul class="nav-menu">
-          <li class="item"><a href="#">Lançamentos</a></li>
-          <li class="item"><a href="#">Filmes</a></li>
-          <li class="item"><a href="#">Gêneros</a></li>
+          <li class="item"><a href="#recomendacoes">Lançamentos</a></li>
+          <li class="item"><a href="#recomendacoes">Filmes</a></li>
+          <li class="item"><a href="#recomendacoes">Gêneros</a></li>
 
           <input
             type="text"
@@ -32,8 +32,17 @@
             class="input"
             placeholder="Pesquise aqui os seus animes!"
           />
-          <button class="botao_superior">
-            <span> <a class="botao-text" href="cadastro.html">Entrar </a></span>
+          
+            <button
+              onclick="window.location.href='#';"
+              class="botao botao-inicia"
+            >
+              <span>
+                <a class="botao-perfil">
+                  <i class="fa-solid fa-user icone"></i>Perfil</a
+                ></span
+              >
+            </button>
           </button>
         </ul>
       </nav>
@@ -183,7 +192,7 @@
 
     <!-- Recomendações -->
 
-    <div class="recomendacoes">
+    <div id="recomendacoes" class="recomendacoes">
       <p>Recomendações</p>
       <div class="recomendacoes_animes">
         <div class="item">

@@ -25,6 +25,7 @@
   font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -143,6 +144,12 @@ button:active {
 }
 .botao-text {
   color: white;
+}
+.botao-perfil {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 /* Fim Barra topo */
 
